@@ -10,23 +10,25 @@ public class App {
         askQuestion2();
         double weightInKg = scan.nextDouble();
         double bmi = weightInKg /(heightINMeters * heightINMeters) ;
-        System.out.println(bmi);
+        System.out.println("Your BMI is "+bmi);
 
 
         if(bmi < 15){
-            System.out.println("very severely underweight\n");
+            System.out.println("BMI Category: very severely underweight\n");
         }else if(bmi >= 15 && bmi <= 16){
-            System.out.println("severely underweight\n");
+            System.out.println("BMI Category: severely underweight\n");
         }else if(bmi >= 16.1 &&  bmi <= 18.4){
-            System.out.println("underweight");
+            System.out.println("BMI Category: underweight");
         }else if(bmi >= 18.5 && bmi <= 24.9){
-            System.out.println("normal weight\n");
+            System.out.println("BMI Category: normal weight\n");
         }else if(bmi >= 25 && bmi <= 29.9){
-            System.out.println("overweight");
+            System.out.println("BMI Category: overweight");
         }else if(bmi >= 30 && bmi <= 34.9){
-            System.out.println("moderately obese");
+            System.out.println("BMI Category: moderately obese");
         }else if(bmi >= 35 && bmi <= 39.9){
-            System.out.println("severely obese");
+            System.out.println("BMI Category: severely obese");
+        }else {
+            System.out.println("BMI Category: \tvery severely (or \"morbidly\") obese");
         }
 
 
