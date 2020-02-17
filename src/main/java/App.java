@@ -15,8 +15,10 @@ public class App {
 
         if(bmi < 15){
             System.out.println("very severely underweight\n");
-        }else if(bmi >= 15 || bmi <= 16){
+        }else if(bmi >= 15 && bmi <= 16){
             System.out.println("severely underweight\n");
+        }else if(bmi >= 16.1 &&  bmi <= 18.4){
+            System.out.println("underweight");
         }
 
 
