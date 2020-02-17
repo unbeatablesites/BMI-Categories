@@ -8,7 +8,9 @@ public class App {
         int heightINMeters = scan.nextInt();
         askQuestion2();
         int weightInKg = scan.nextInt();
-        int bmi = (heightINMeters * heightINMeters) / weightInKg;
+        int bmi = weightInKg /(heightINMeters * heightINMeters) ;
+
+        System.out.println(bmi);
 
     }
 
