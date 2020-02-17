@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -9,8 +10,13 @@ public class App {
         askQuestion2();
         double weightInKg = scan.nextDouble();
         double bmi = weightInKg /(heightINMeters * heightINMeters) ;
-
         System.out.println(bmi);
+
+
+        if(bmi < 15){
+            System.out.println("very severely underweight\n");
+        }
+
 
     }
 
