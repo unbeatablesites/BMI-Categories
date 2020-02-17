@@ -5,10 +5,10 @@ public class App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         askQuestion1();
-        int heightINMeters = scan.nextInt();
+        double heightINMeters = scan.nextDouble();
         askQuestion2();
-        int weightInKg = scan.nextInt();
-        int bmi = weightInKg /(heightINMeters * heightINMeters) ;
+        double weightInKg = scan.nextDouble();
+        double bmi = weightInKg /(heightINMeters * heightINMeters) ;
 
         System.out.println(bmi);
 
